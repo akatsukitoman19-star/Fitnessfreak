@@ -1,0 +1,6 @@
+{
+  "name": "Fitness Freak Ladies Gym",
+  "description": "A premium, modern ladies' gym website offering elegant fitness programs, personalized training, and premium wellness facilities with a soft glowing aesthetic.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
