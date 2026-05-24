@@ -2,28 +2,13 @@ import React, { useState } from 'react';
 import { Instagram, Linkedin, Facebook, Star, Award, Heart, MessageSquareText } from 'lucide-react';
 import { Trainer } from '../types';
 
-const imageAnanya = "/src/assets/images/trainer_ananya_1779633005840.png";
-const imagePriya = "/src/assets/images/trainer_priya_1779633025371.png";
-const imageSofia = "/src/assets/images/trainer_sofia_1779633044465.png";
+const imagePriya = "https://images.pexels.com/photos/13673631/pexels-photo-13673631.jpeg?auto=compress&cs=tinysrgb&w=600";
+const imageSofia = "https://images.pexels.com/photos/20418608/pexels-photo-20418608.jpeg?auto=compress&cs=tinysrgb&w=600";
 
 export default function Trainers() {
   const [selectedTrainer, setSelectedTrainer] = useState<Trainer | null>(null);
 
   const trainersData: Trainer[] = [
-    {
-      id: 'ananya',
-      name: 'Ananya Sharma',
-      specialty: 'Head Strength Coach & Nutritionist',
-      experience: '8+ Years Experience',
-      bio: 'Ananya is a certified CrossFit level-2 coach and sports nutrition specialist. She is passionate about breaking the stereotype that lifting heavy is only for men, guiding over 800+ women to their strength peaks.',
-      image: imageAnanya,
-      credentials: ['ACE Certified Personal Trainer', 'ISSN Sports Nutritionist', 'Functional Kettlebell Master'],
-      social: {
-        instagram: 'https://instagram.com/ananya_sports_fit',
-        facebook: 'https://facebook.com/chef.ananya.fit',
-        linkedin: 'https://linkedin.com/in/ananya-fit-elite'
-      }
-    },
     {
       id: 'priya',
       name: 'Priya Kapoor',
@@ -77,7 +62,7 @@ export default function Trainers() {
         </div>
 
         {/* Trainers Cards Loop */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-5xl mx-auto">
           {trainersData.map((trainer) => (
             <div
               key={trainer.id}
